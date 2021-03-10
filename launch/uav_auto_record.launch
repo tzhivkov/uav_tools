@@ -1,0 +1,4 @@
+<launch>
+	<arg name="filename" default="newpcap.pcap" />
+	<node name="velodyne_driver" pkg="velodyne_driver" type="vdump" args="$(arg filename) eth0" />
+</launch>	
